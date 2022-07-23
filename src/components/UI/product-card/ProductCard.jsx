@@ -23,7 +23,13 @@ const ProductCard = (props) => {
   };
 
   return (
-    <div className="product__item">
+    <div className="product__item"
+    data-aos="zoom-in-up"
+    data-aos-offset="300"
+    data-aos-delay="50"
+    data-aos-duration="3000"
+    
+    >
       <div className="product__img">
         <img src={image01} alt="product-img" className="w-50" />
       </div>

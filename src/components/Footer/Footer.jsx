@@ -44,7 +44,7 @@ const Footer = () => {
                 <p>Location: ZindaBazar, Sylhet-3100, Bangladesh</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01712345678</span>
+                <span>Phone: 01823594398</span>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">

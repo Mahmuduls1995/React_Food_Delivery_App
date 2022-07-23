@@ -97,7 +97,15 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <div className="hero__content  ">
+              <div className="hero__content"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                data-aos-once="false"
+
+              >
                 <h5 className="mb-3">Easy way to make an order</h5>
                 <h1 className="mb-4 hero__title">
                   <span>HUNGRY?</span> Just wait <br /> food at
@@ -138,7 +146,15 @@ const Home = () => {
             </Col>
 
             <Col lg="6" md="6">
-              <div className="hero__img">
+              <div className="hero__img"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                data-aos-once="false"
+
+              >
                 <img src={heroImg} alt="hero-img" className="w-100" />
               </div>
             </Col>
@@ -153,7 +169,11 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
+            <Col lg="12" className="text-center"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            >
               <h5 className="feature__subtitle mb-4">What we serve</h5>
               <h2 className="feature__title">Just sit back at home</h2>
               <h2 className="feature__title">
@@ -171,7 +191,11 @@ const Home = () => {
 
             {featureData.map((item, index) => (
               <Col lg="4" md="6" sm="6" key={index} className="mt-5">
-                <div className="feature__item text-center px-5 py-3">
+                <div className="feature__item text-center px-5 py-3"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                >
                   <img
                     src={item.imgUrl}
                     alt="feature-img"
@@ -196,17 +220,15 @@ const Home = () => {
             <Col lg="12">
               <div className="food__category d-flex align-items-center justify-content-center gap-4">
                 <button
-                  className={`all__btn  ${
-                    category === "ALL" ? "foodBtnActive" : ""
-                  } `}
+                  className={`all__btn  ${category === "ALL" ? "foodBtnActive" : ""
+                    } `}
                   onClick={() => setCategory("ALL")}
                 >
                   All
                 </button>
                 <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "BURGER" ? "foodBtnActive" : ""
-                  } `}
+                  className={`d-flex align-items-center gap-2 ${category === "BURGER" ? "foodBtnActive" : ""
+                    } `}
                   onClick={() => setCategory("BURGER")}
                 >
                   <img src={foodCategoryImg01} alt="" />
@@ -214,9 +236,8 @@ const Home = () => {
                 </button>
 
                 <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "PIZZA" ? "foodBtnActive" : ""
-                  } `}
+                  className={`d-flex align-items-center gap-2 ${category === "PIZZA" ? "foodBtnActive" : ""
+                    } `}
                   onClick={() => setCategory("PIZZA")}
                 >
                   <img src={foodCategoryImg02} alt="" />
@@ -224,9 +245,8 @@ const Home = () => {
                 </button>
 
                 <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "BREAD" ? "foodBtnActive" : ""
-                  } `}
+                  className={`d-flex align-items-center gap-2 ${category === "BREAD" ? "foodBtnActive" : ""
+                    } `}
                   onClick={() => setCategory("BREAD")}
                 >
                   <img src={foodCategoryImg03} alt="" />
@@ -247,12 +267,26 @@ const Home = () => {
       <section className="why__choose-us">
         <Container>
           <Row>
-            <Col lg="6" md="6">
+            <Col lg="6" md="6"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               <img src={whyImg} alt="why-tasty-treat" className="w-100" />
             </Col>
 
             <Col lg="6" md="6">
-              <div className="why__tasty-treat">
+              <div className="why__tasty-treat"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 <h2 className="tasty__treat-title mb-4">
                   Why <span>Tasty Treat?</span>
                 </h2>
@@ -337,7 +371,14 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="6"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >
               <img src={networkImg} alt="testimonial-img" className="w-100" />
             </Col>
           </Row>
